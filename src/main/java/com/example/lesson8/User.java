@@ -1,12 +1,14 @@
 package com.example.lesson8;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.io.Serializable;
+import java.util.List;
 
 
 @Entity
@@ -26,8 +28,16 @@ public class User implements Serializable {
     @Column(name = "email")
     private String email;
 
-    public User(String name, String email) {
+    @Column(name = "gender")
+    private String gender;
+
+    @OneToMany(mappedBy = "sender", cascade = CascadeType.ALL)
+    @JsonBackReference
+    private List<Message> messages;
+
+    public User(String name, String email, String gender) {
         this.name = name;
         this.email = email;
+        this.gender = "мужчина";
     }
 }

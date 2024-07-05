@@ -4,8 +4,10 @@ package com.example.lesson8;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
-@RequestMapping
+@RequestMapping("/users")
 public class UserController {
 
     private final UserService userService;
@@ -29,4 +31,25 @@ public class UserController {
     public User updateUser(@RequestParam Long id, @RequestBody User user) {
         return userService.update(id, user);
     }
+
+    @GetMapping("/email")
+    public User getUserByEmail(@RequestParam String email) {
+        return userService.getUserByEmail(email);
+    }
+
+    @GetMapping("/search")
+    public List<User> getUsersByNameContaining(@RequestParam String name) {
+        return userService.getUsersByNameContaining(name);
+    }
+
+    @GetMapping("/gender")
+    public List<User> getUsersByGender(@RequestParam String gender) {
+        return userService.getUsersByGender(gender);
+    }
+
+    @PutMapping("/updateGender")
+    public int updateGenderWhereNull(@RequestParam String gender) {
+        return userService.updateGenderWhereNull(gender);
+    }
+
 }
