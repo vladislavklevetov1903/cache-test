@@ -1,7 +1,7 @@
 package com.example.lesson8.Entities;
 
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import jakarta.persistence.Table;
@@ -27,7 +27,7 @@ public class Message implements Serializable {
 
     @ManyToOne
     @JoinColumn(name="sender_id")
-    @JsonManagedReference
+    @JsonBackReference
     private User sender;
 
     public Message(String text, User sender) {

@@ -1,7 +1,7 @@
 package com.example.lesson8.Entities;
 
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -32,7 +32,7 @@ public class User implements Serializable {
     private String gender;
 
     @OneToMany(mappedBy = "sender", cascade = CascadeType.ALL)
-    @JsonBackReference
+    @JsonManagedReference
     private List<Message> messages;
 
     public User(String name, String email, String gender) {
