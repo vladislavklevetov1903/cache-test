@@ -1,4 +1,4 @@
-package com.example.lesson8.Swagger;
+package com.example.lesson8.config;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.servers.Server;

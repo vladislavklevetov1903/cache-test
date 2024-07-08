@@ -1,6 +1,6 @@
-package com.example.lesson8.ServicesInterfaces;
+package com.example.lesson8.service;
 
-import com.example.lesson8.Entities.Message;
+import com.example.lesson8.entity.Message;
 
 public interface MessageService {
 

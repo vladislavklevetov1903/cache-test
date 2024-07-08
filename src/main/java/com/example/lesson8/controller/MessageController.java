@@ -1,9 +1,8 @@
-package com.example.lesson8.Controllers;
+package com.example.lesson8.controller;
 
 
-import com.example.lesson8.Entities.Message;
-import com.example.lesson8.ServicesInterfaces.MessageService;
-import io.swagger.v3.oas.annotations.OpenAPI31;
+import com.example.lesson8.entity.Message;
+import com.example.lesson8.service.MessageService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;

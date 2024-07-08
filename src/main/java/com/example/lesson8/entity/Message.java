@@ -1,4 +1,4 @@
-package com.example.lesson8.Entities;
+package com.example.lesson8.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonBackReference;

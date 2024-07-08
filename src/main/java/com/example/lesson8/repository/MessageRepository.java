@@ -1,6 +1,6 @@
-package com.example.lesson8.Repositories;
+package com.example.lesson8.repository;
 
-import com.example.lesson8.Entities.Message;
+import com.example.lesson8.entity.Message;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

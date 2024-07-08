@@ -1,8 +1,8 @@
-package com.example.lesson8.Controllers;
+package com.example.lesson8.controller;
 
 
-import com.example.lesson8.Entities.User;
-import com.example.lesson8.ServicesInterfaces.UserService;
+import com.example.lesson8.entity.User;
+import com.example.lesson8.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
