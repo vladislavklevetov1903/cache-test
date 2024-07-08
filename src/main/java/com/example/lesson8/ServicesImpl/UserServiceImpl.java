@@ -1,10 +1,11 @@
-package com.example.lesson8;
+package com.example.lesson8.ServicesImpl;
 
+import com.example.lesson8.Repositories.UserRepository;
+import com.example.lesson8.ServicesInterfaces.UserService;
+import com.example.lesson8.Entities.User;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

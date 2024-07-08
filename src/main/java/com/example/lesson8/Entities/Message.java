@@ -1,4 +1,4 @@
-package com.example.lesson8;
+package com.example.lesson8.Entities;
 
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;

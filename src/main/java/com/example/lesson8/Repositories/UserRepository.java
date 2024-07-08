@@ -1,5 +1,6 @@
-package com.example.lesson8;
+package com.example.lesson8.Repositories;
 
+import com.example.lesson8.Entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

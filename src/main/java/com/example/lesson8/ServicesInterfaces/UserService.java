@@ -1,5 +1,7 @@
-package com.example.lesson8;
+package com.example.lesson8.ServicesInterfaces;
 
+
+import com.example.lesson8.Entities.User;
 
 import java.util.List;
 

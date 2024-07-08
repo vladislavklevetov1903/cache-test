@@ -1,12 +1,16 @@
-package com.example.lesson8;
+package com.example.lesson8.ServicesImpl;
 
 
+import com.example.lesson8.Entities.Message;
+import com.example.lesson8.Repositories.MessageRepository;
+import com.example.lesson8.Repositories.UserRepository;
+import com.example.lesson8.ServicesInterfaces.MessageService;
+import com.example.lesson8.Entities.User;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 @Slf4j
